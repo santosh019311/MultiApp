@@ -1,0 +1,28 @@
+<web-app>
+<context-param>
+			<param-name>driver</param-name>
+			<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+		</context-param>
+		<context-param>
+			<param-name>dburl</param-name>
+			<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+		</context-param>
+		<context-param>
+			<param-name>dbuser</param-name>
+			<param-value>system</param-value>
+		</context-param>
+		<context-param>
+			<param-name>dbpwd</param-name>
+			<param-value>admin</param-value>
+		</context-param>
+	<servlet>
+	
+		<servlet-name>d</servlet-name>
+		<servlet-class>com.app.servlet.DBServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>d</servlet-name>
+		<url-pattern>/dburl</url-pattern>
+	</servlet-mapping>
+</web-app>
