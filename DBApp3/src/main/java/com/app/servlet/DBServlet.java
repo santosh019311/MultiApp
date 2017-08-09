@@ -30,7 +30,7 @@ public class DBServlet extends HttpServlet {
 		String s3 = cg.getInitParameter("dbuser");
 		String s4 = cg.getInitParameter("dbpwd");
 		// crete jdbc con
-		try {
+		try
 			Class.forName(s1);
 			con = DriverManager.getConnection(s2, s3, s4);
 			// create ps obj
