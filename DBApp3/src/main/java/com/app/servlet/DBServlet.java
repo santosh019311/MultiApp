@@ -25,7 +25,7 @@ public class DBServlet extends HttpServlet {
 		// get access to ServletConfig obj
 		cg= getServletContext();
 		// read param value from web.xml
-		String s1 = cg.getInitParameter("driver");;;;
+		String s1 = cg.getInitParameter("driver");
 		String s2 = cg.getInitParameter("dburl");
 		String s3 = cg.getInitParameter("dbuser");
 		String s4 = cg.getInitParameter("dbpwd");
