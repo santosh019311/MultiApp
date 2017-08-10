@@ -38,5 +38,5 @@ public class DiamondPrint {
 			System.out.println();
 		}
 
-	}
+	}//main
 }
