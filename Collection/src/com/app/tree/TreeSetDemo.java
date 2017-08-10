@@ -19,5 +19,7 @@ t.add(10);
 t.add(5);
 t.add(15);
 System.out.println(t);
+System.out.println(t);
+System.out.println(t);
 }
 }
